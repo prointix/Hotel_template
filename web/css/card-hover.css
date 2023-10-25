@@ -1,0 +1,28 @@
+.box-price {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+}
+
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  overflow: hidden;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.card-img-wrapper img {
+  transition: 1.5s ease;
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card:hover .demo-card-title {
+  color: var(--primary);
+}
+.card:hover .btn-more-detail {
+  color: var(--success);
+}
