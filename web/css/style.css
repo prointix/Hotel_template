@@ -66,35 +66,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-/* h1,
-.h1 {
-  font-size: 2.5rem;
-}
 
-h2,
-.h2 {
-  font-size: 2rem;
-}
-
-h3,
-.h3 {
-  font-size: 1.75rem;
-}
-
-h4,
-.h4 {
-  font-size: 1.5rem;
-}
-
-h5,
-.h5 {
-  font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-  font-size: 1rem;
-} */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -128,7 +100,7 @@ p {
   color: var(--bg-info);
 }
 
-/* navbar */
+/* ============navbar============= */
 .demo-navbar {
   padding: 10px 15px;
   /* overflow: hidden;
@@ -155,11 +127,11 @@ p {
   font-weight: 600;
   letter-spacing: 2px;
 } */
-/* seaction search */
+/* ==================seaction search============== */
 .bg-primary-search {
   background-color: var(--bg-primary) !important;
 }
-/* custome style search-section*/
+/* =================custome style search-section============== */
 .search-section {
   padding: 30px 130px;
   z-index: 3 !important;
@@ -516,6 +488,9 @@ p {
   padding: 15px 30px;
   border-radius: 8px;
   background-color: var(--bg-btn);
+}
+.bg-partner-home {
+  background-color: var(--bg-contact);
 }
 /* contact-section in home */
 .contact-section {
@@ -1216,9 +1191,6 @@ p {
   letter-spacing: 1px;
 }
 .line-room {
-  /* width: 400px;
-  height: 2px; */
-  /* background-color: var(--color-line); */
   border: 1px solid var(--color-line);
 }
 .demo-btn-primary {

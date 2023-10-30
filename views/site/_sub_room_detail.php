@@ -45,9 +45,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">STUDIO QUEEN</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="<?= Url::to('@web/booking/room-detail') ?>" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -71,9 +71,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">EXECUTIVE RESIDENCE</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -97,9 +97,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">DELUXE KING</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -123,9 +123,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">STUDIO QUEEN</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -149,9 +149,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">EXECUTIVE RESIDENCE</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -175,9 +175,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">DELUXE KING</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -203,9 +203,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">STUDIO QUEEN</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -229,9 +229,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">EXECUTIVE RESIDENCE</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -255,9 +255,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">DELUXE KING</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -281,9 +281,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">STUDIO QUEEN</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -307,9 +307,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">EXECUTIVE RESIDENCE</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>
@@ -333,9 +333,9 @@ use yii\helpers\Url;
                     <div class="card-body">
                         <h5 class="demo-card-title">DELUXE KING</h5>
                         <div class="line-card"></div>
-                        <div class="d-flex mb-4 mt-2">
-                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1" alt="icon" width="17px"> Capacity : 4 Adults</small>
-                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
+                        <div class="d-flex mb-4 mt-2 card-icon-respon">
+                            <small class="mr-2"><img src="<?= Yii::getAlias('@web/img/icon/account_circle.png') ?>" class="me-1 w-respon" alt="icon" width="17px"> Capacity : 4 Adults</small>
+                            <small><img src="<?= Yii::getAlias('@web/img/icon/pivot_table_chart.png') ?>" class="ms-3 w-respon" alt="icon" width="18px" height="18px"> Size : 39m²-53m²</small>
                         </div>
                         <a href="#" class="btn-more-detail mt-2">More detail <i class="fas fa-angle-right ms-1"></i></a>
                     </div>

@@ -1,5 +1,5 @@
 <div class="container body-section">
-    <div class="row justify-content-between">
+    <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
             <div class="demo-bg-image">
                 <img src="<?= Yii::getAlias('@web/Union.png') ?>" alt="bg image" class="demo-group-icon" width="200px">
@@ -13,7 +13,7 @@
         </div>
         <div class="col-12 col-lg-6">
             <div class="row row-cols-2 g-3">
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                     <div class="thumbnail">
                         <div class="thumbnail-effect">
                             <img src="<?= Yii::getAlias('@web/img/Image-body-1.png') ?>" class="rounded mx-auto d-block" alt="image body" width="250px">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                     <div class="thumbnail">
                         <div class="thumbnail-effect">
                             <img src="<?= Yii::getAlias('@web/img/Image-body-3.png') ?>" class="rounded mx-auto d-block" alt="image body" width="250px">

@@ -7,17 +7,17 @@ DatePickerAsset::register($this);
 <div class="container-fluid bg-primary-search mb-2 search-section">
   <div class="container">
     <div class="row g-4">
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-xl-9">
         <div class="row g-3">
-          <div class="col-lg">
+          <div class="col-lg col-xl">
             <div class="row">
-              <div class="col">
+              <div class="col col-lg-6 col-xl-6">
                 <div class="input-group mt-1">
                   <input type="text" id="selecteddate" class="form-control demo-border-search py-2 bor-1" name="datefilter" placeholder="Check in">
                   <span class="input-group-text demo-input-group-text"><small class="mr-0"><img src="<?= Yii::getAlias('@web/img/icon/Union-1.png') ?>" class="me-1" alt="icon" width="17px"></small></span>
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-lg-6 col-xl-6">
                 <div class="input-group mt-1">
                   <input type="text" id="selecteddate" class="form-control demo-border-search py-2 bor-1" name="datefilter" value="" placeholder="Check out">
                   <span class="input-group-text demo-input-group-text"><small class="mr-0"><img src="<?= Yii::getAlias('@web/img/icon/Union-1.png') ?>" class="me-1" alt="icon" width="17px"></small></span>
@@ -117,7 +117,7 @@ DatePickerAsset::register($this);
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-3 d-grid gap-2">
+      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-grid gap-2">
         <button class="btn-search border py-2 mt-1">Check Availability</button>
       </div>
     </div>

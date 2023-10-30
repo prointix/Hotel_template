@@ -9,25 +9,25 @@ DatePickerAsset::register($this);
 $this->title = 'Room and Offer';
 ?>
 <style>
-    .wrapper {
+    /* .wrapper {
         padding: 5px 0;
         overflow-x: hidden;
     }
 
     .slick-initialized .slick-slide {
         color: #FFF;
-        margin: 0 15px 0 0;
+        margin: 0 25px 0 0;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .demo-gallery {
         width: 250px !important;
-        height: 150px !important;
+        height: 120px !important;
     }
 
-    .slick-next,
+    /* .slick-next,
     .slick-prev {
         z-index: 5;
     }
@@ -43,7 +43,7 @@ $this->title = 'Room and Offer';
     .slick-prev:before,
     .slick-next:before {
         color: #3a71c2;
-    }
+    } */
 </style>
 <div class="section-room-detail bg-info-search mt-4">
     <div class="container-fluid ">
@@ -91,8 +91,9 @@ $this->title = 'Room and Offer';
     <div class="container my-5">
         <div class="row d-flex justify-content-between">
             <div class="col-lg-6">
-                <img src="<?= Yii::getAlias('@web/img/room-offer-1.png') ?>" class="rounded img-fluid d-block" alt="Room and Offer" width="536px">
-                <div class="d-flex justify-content-center mt-4">
+                <?= $this->render('gallery-room') ?>
+                <!-- <img src="<?= Yii::getAlias('@web/img/room-offer-1.png') ?>" class="rounded img-fluid d-block" alt="Room and Offer" width="536px">
+                <div class="d-flex justify-content-around mt-4">
                     <div class="wrapper">
                         <div class="slider-gallery-room">
                             <div>
@@ -115,32 +116,34 @@ $this->title = 'Room and Offer';
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-5">
                 <div class="card card-border-room">
-                    <div class="card-body px-4 py-5">
+                    <div class="card-body px-4 py-4">
                         <h5 class="text-uppercase text-room">ALDENAIRE</h5>
                         <hr class="line-room">
                         <div class="row mt-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex justify-content-between">
-                                    <h4 class="text-uppercase">DELUXE KING</h4>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="small-ratings">
-                                        <i class="fa fa-star rating-color"></i>
-                                        <i class="fa fa-star rating-color"></i>
-                                        <i class="fa fa-star rating-color"></i>
-                                        <i class="fa fa-star rating-color"></i>
-                                        <i class="fa fa-star rating-color"></i>
-                                        <small class="ms-1">5.0</small>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between lh-sm">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="text-uppercase">DELUXE KING</h4>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="small-ratings">
+                                                <i class="fa fa-star rating-color"></i>
+                                                <i class="fa fa-star rating-color"></i>
+                                                <i class="fa fa-star rating-color"></i>
+                                                <i class="fa fa-star rating-color"></i>
+                                                <i class="fa fa-star rating-color"></i>
+                                                <small class="ms-1">5.0</small>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="text-end">
-                                    <h4 class="fw-bolder">$130<small class="fw-light fs-6">/night</small></h4>
+                                    <span>
+                                        <h4 class="fw-bolder">$130<small class="fw-light fs-6">/night</small></h4>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +258,7 @@ $this->title = 'Room and Offer';
                     <div class="card-body">
                         <div class="row">
                             <div class="col-2 col-lg-2 d-flex justify-content-start align-items-start mb-4 mb-lg-0">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="border border-2 rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
                             </div>
                             <div class="col-10 col-lg-10">
                                 <p class="fw-light lead mb-0"><strong>Andrew C</strong></p>
@@ -280,7 +283,7 @@ $this->title = 'Room and Offer';
                     <div class="card-body">
                         <div class="row">
                             <div class="col-2 col-lg-2 d-flex justify-content-start align-items-start mb-4 mb-lg-0">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="border border-2 rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
                             </div>
                             <div class="col-10 col-lg-10">
                                 <p class="fw-light lead mb-0"><strong>Joe Jonh</strong></p>
@@ -305,7 +308,7 @@ $this->title = 'Room and Offer';
                     <div class="card-body">
                         <div class="row">
                             <div class="col-2 col-lg-2 d-flex justify-content-start align-items-start mb-4 mb-lg-0">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="border border-2 rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
                             </div>
                             <div class="col-10 col-lg-10">
                                 <p class="fw-light lead mb-0"><strong>Jonh Wick</strong></p>
@@ -330,7 +333,7 @@ $this->title = 'Room and Offer';
                     <div class="card-body">
                         <div class="row">
                             <div class="col-2 col-lg-2 d-flex justify-content-start align-items-start mb-4 mb-lg-0">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp" class="border border-2 rounded-circle img-fluid shadow-1" alt="woman avatar" width="80" height="80" />
                             </div>
                             <div class="col-10 col-lg-10">
                                 <p class="fw-light lead mb-0"><strong>Florita nita</strong></p>
@@ -359,48 +362,48 @@ $this->title = 'Room and Offer';
 </div>
 <?php
 $script = <<<JS
-    $(document).ready(function(){
-      $('.slider-gallery-room').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        speed: 300,
-        infinite: true,
-        autoplaySpeed: 3000,
-        autoplay: true,
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        }
+//     $(document).ready(function(){
+//       $('.slider-gallery-room').slick({
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         arrows: true,
+//         speed: 300,
+//         infinite: true,
+//         autoplaySpeed: 3000,
+//         autoplay: true,
+//         responsive: [
+//         {
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1
+//             }
+//         },
+//         {
+//             breakpoint: 576,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1
+//             }
+//         }
 
-  ]
-      });
-    });
+//   ]
+//       });
+//     });
 
     // Date picker
     flatpickr('#selecteddate', {
