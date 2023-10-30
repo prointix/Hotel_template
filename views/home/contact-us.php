@@ -13,11 +13,11 @@ $this->title = 'Contact Us';
     </div>
     <div class="container mb-5">
         <div class="row">
-            <div class="col-lg-6 order-last order-sm-first mt-sm-5">
+            <div class="col-lg-6 order-lg-1 order-sm-2 mt-sm-5">
                 <h2>Contact information</h2>
                 <p class="text-contact-small-information col-lg-11">We are here to help you with any questions or concerns you may have. Please feel free to contact us using the information below.</p>
-                <div class="line-us my-3 d-none d-sm-block"></div>
-                <hr class="d-block d-sm-none">
+                <div class="line-us my-3 d-sm-none d-md-block"></div>
+                <hr class="d-none d-sm-block d-md-none">
                 <div class="d-block">
                     <small class="text-contact-small">Phone Number</small>
                     <h4 class="demo-text-contact-us">(+885) 60 617 022</h4>
@@ -34,8 +34,8 @@ $this->title = 'Contact Us';
                     <small class="text-contact-small">Our hours of operation</small>
                     <h4 class="demo-text-contact-us">Available 24/7</h4>
                 </div>
-                <div class="line-us-infor my-4 d-none d-sm-block"></div>
-                <hr class="d-block d-sm-none">
+                <div class="line-us-infor my-4 d-sm-none d-md-block"></div>
+                <hr class="d-none d-sm-block d-md-none">
                 <div class="my-4">
                     <!-- <button type="button" class="btn btn-outline-dark btn-circle-footer mx-1"><i class="fas fa-voicemail"></i></button> -->
                     <button type="button" class="btn btn-outline-light btn-circle-footer mx-1"><img src="<?= Yii::getAlias('@web/img/icon/Trip_Advisor.png') ?>" class="pb-0" alt="trip advisor" width="19px"></button>
@@ -44,7 +44,7 @@ $this->title = 'Contact Us';
                     <button type="button" class="btn btn-outline-dark btn-circle-footer mx-1"><i class="fas fa-envelope"></i></button>
                 </div>
             </div>
-            <div class="col-lg-6 order-first order-sm-last">
+            <div class="col-lg-6 order-lg-2 order-sm-1">
                 <div class="card mb-4 demo-card-contact-us">
                     <div class="card-body demo-card-body-contact-us">
                         <h3 class="mb-4">Get in touch</h3>

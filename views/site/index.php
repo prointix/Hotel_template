@@ -67,7 +67,12 @@ $this->title = 'ALDENAIRE';
 <?= $this->render('_body_section') ?>
 <?= $this->render('_facility_section') ?>
 <?= $this->render('_card_section') ?>
-<?= $this->render('_partner_section') ?>
+<section class="bg-partner-home my-2 p-2 d-none d-sm-block d-md-none">
+    <?= $this->render('_partner_section') ?>
+</section>
+<section class="d-sm-none d-md-block">
+    <?= $this->render('_partner_section') ?>
+</section>
 <?= $this->render('_contact_section') ?>
 <?= $this->render('_news_and_update_section') ?>
 <?php

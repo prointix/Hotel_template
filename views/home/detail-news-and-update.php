@@ -76,7 +76,7 @@ $this->title = 'News and Update';
                     </div>
                     <div class="pl-3">
                         <span class="btn-news-sub-detail">Dec 22, 2023</span>
-                        <h6 class="ml-0 sub-text-detail">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
+                        <h6 class="ml-0 sub-text-detail mt-2 mb-3">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
                         <small class="fst-italic text-more-detail">Read more</small>
                     </div>
                 </div>
