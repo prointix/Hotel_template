@@ -9,7 +9,7 @@ $this->title = 'Payment';
         <div class="container">
             <div class="section-breadcrumb mb-5">
                 <div class="row justify-content-start">
-                    <div class="col-lg-10 d-none d-sm-block">
+                    <div class="col-lg-10 d-sm-none d-md-block">
                         <div class="d-inline-flex text-white">
                             <p class="m-0"><a href="<?= Yii::$app->homeUrl ?>" class="text-decoration-none text-white fw-light"> <img src="<?= Yii::getAlias('@web/img/icon/Home-1.png') ?>" class="me-2" alt="icon" width="17px"> Home</a></p>
                             <i class="fas fa-angle-right pt-1 px-3"></i>
