@@ -4,6 +4,25 @@ use yii\helpers\Url;
 
 $this->title = 'Payment';
 ?>
+<style>
+    .form-check-input {
+        color: #D9D9D9;
+    }
+
+    .form-check-input:checked {
+        background-color: #3BC9AD !important;
+        border-color: #3BC9AD !important;
+    }
+
+    .demo-form-check-box {
+        color: #D9D9D9;
+    }
+
+    .demo-form-check-box:checked {
+        background-color: #2980B9 !important;
+        border-color: #2980B9 !important;
+    }
+</style>
 <div class="section-room-detail bg-info-search mt-4">
     <div class="container-fluid ">
         <div class="container">
@@ -157,7 +176,7 @@ $this->title = 'Payment';
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-block">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input demo-form-check-box" type="checkbox" value="" id="paypal" checked>
                                     </div>
                                     <div class="d-block mt-2">
                                         <img src="<?= Yii::getAlias('@web/img/logo/PayPal-Logo 1.png') ?>" class="me-1" alt="icon" width="65px">
@@ -169,10 +188,21 @@ $this->title = 'Payment';
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-block">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input demo-form-check-box" type="checkbox" value="" id="creditCard">
                                     </div>
                                     <div class="d-block mt-2">
                                         <small class="ms-0 text-small-credit"><img src="<?= Yii::getAlias('@web/img/icon/ic_CreditDebit.png') ?>" class="me-2" alt="icon" width="25px">Credit/Debit Card</small>
+                                        <div class="position-relative">
+                                            <div class="position-absolute" style="top: -8px;left:10px">
+                                                <img src="<?= Yii::getAlias('@web/img/icon/All-Card.png') ?>" class="ms-4" alt="icon" width="80px">
+                                            </div>
+                                        </div>
+                                        <div class="position-relative section-credit-Card1">
+                                            <div class="position-absolute" style="top: -8px;left:10px; display:none;">
+                                                <img src="<?= Yii::getAlias('@web/img/icon/All-Card-active.png') ?>" class="ms-4" alt="icon" width="80px">
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +211,7 @@ $this->title = 'Payment';
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-block">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input demo-form-check-box" type="checkbox" value="" id="card">
                                     </div>
                                     <div class="d-block mt-2">
                                         <small class="ms-0"><img src="<?= Yii::getAlias('@web/img/icon/add_card.png') ?>" class="me-1" alt="icon" width="19px">New card</small>
@@ -190,16 +220,53 @@ $this->title = 'Payment';
                             </div>
                         </div>
                     </div>
-                    <hr class="mt-4">
-                    <h5 class="text-paypal-title">PayPal</h5>
-                    <small class="text-detial-paypal">Click the PayPal button to log into your account. Please stay on PayPal’s page until we’ve directed you back to review and complete your booking.</small>
-                    <div class="form-check form-switch mt-3">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                        <label class="form-check-label demo-form-check-label" for="flexSwitchCheckChecked">Save your PayPal account for faster payment next time.</label>
+                    <div class="section-paypal">
+                        <hr class="mt-4">
+                        <h5 class="text-paypal-title">PayPal</h5>
+                        <small class="text-detial-paypal">Click the PayPal button to log into your account. Please stay on PayPal’s page until we’ve directed you back to review and complete your booking.</small>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label demo-form-check-label" for="flexSwitchCheckChecked">Save your PayPal account for faster payment next time.</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <div class="h5 demo-paypal">Pay<span class="color-paypal">Pal</span></div>
+                        </div>
                     </div>
-
-                    <div class="d-flex mt-4">
-                        <div class="h5 demo-paypal">Pay<span class="color-paypal">Pal</span></div>
+                    <div class="section-new-card" style="display: none;">
+                        <hr class="mt-4">
+                        <h5 class="text-paypal-title">New Card</h5>
+                        <div class="mb-3">
+                            <label for="forname" class="form-label fw-light">Cardhoder’s name</label>
+                            <input type="name" class="form-control form-control-lg">
+                        </div>
+                        <label class="fw-light">Card Number</label>
+                        <div class="input-group">
+                            <div class="input-group-text border-end-0" style="background-color: #ffff;">
+                                <i class="fa fa-credit-card"></i>
+                            </div>
+                            <input type="text" class="form-control form-control-lg border-start-0">
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="fw-light">Expiry Date</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="MM/YY">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-light">CVC/CVV</label>
+                                <div class="input-group">
+                                    <div class="input-group-text border-end-0" style="background-color: #ffff;">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <input type="text" class="form-control form-control-lg border-start-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label demo-form-check-label" for="exampleCheck1">Save your card for faster payment next time.</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,3 +277,18 @@ $this->title = 'Payment';
         </div>
     </div>
 </div>
+<?php
+$script = <<<JS
+
+$(document).ready(function(){
+  $("#paypal").click(function(){
+    $(".section-paypal").toggle(1000);
+  });
+  
+  $("#card").click(function(){
+    $(".section-new-card").toggle(1000);
+  });
+});
+JS;
+$this->registerJs($script);
+?>

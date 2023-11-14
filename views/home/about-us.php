@@ -6,6 +6,33 @@ use Codeception\Lib\Interfaces\Web;
 SlickAsset::register($this);
 $this->title = 'About Us';
 
+// Card FAQ
+$cardfaq = [
+    [
+        'title' => 'What are the check-in and check-out times?',
+        'description' => 'We are always happy to hear from our customers. If you have any questions, comments, or suggestions, please feel free to contact us. We can be reached by phone, email, or through our website.',
+    ],
+    [
+        'title' => 'What are the payment options?',
+        'description' => 'Our hotel typically accept cash, credit cards, and debit cards. Some hotels may also accept travelers checks or money orders.',
+    ],
+    [
+        'title' => 'What are the amenities offered?',
+        'description' => 'Amenities offered by hotels vary depending on the hotel. Some common amenities include free Wi-Fi, a fitness center, a swimming pool, and a business center.',
+    ],
+    [
+        'title' => 'What are the cancellation policies?',
+        'description' => "Cancellation policies vary depending on the hotel. You should always check the hotel's cancellation policy before making a reservation.",
+    ],
+    [
+        'title' => 'What are the pet policies?',
+        'description' => "Pet policies vary depending on the hotel. Some hotels allow pets, while others do not. You should always check the hotel's pet policy before making a reservation.",
+    ],
+    [
+        'title' => 'What are the accessibility options?',
+        'description' => "Accessibility options vary depending on the hotel. Some hotels have rooms that are accessible to guests with disabilities. You should always check the hotel's accessibility options before making a reservation.",
+    ],
+]
 ?>
 <section class="section-about-us">
     <div class="container">
@@ -98,43 +125,16 @@ $this->title = 'About Us';
         <div class="line-faqs"></div>
     </div>
     <div class="row d-flex justify-content-center row-cols-1 mt-4 g-4">
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the check-in and check-out times?</h5>
-                            <p class="card-text card-text-faqs mt-1">We are always happy to hear from our customers. If you have any questions, comments, or suggestions, please feel free to contact us. We can be reached by phone, email, or through our website.</p>
-                        </div>
-                    </div>
-                    <div class="position-absolute Dotted-Shape">
-                        <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the payment options?</h5>
-                            <p class="card-text card-text-faqs mt-1">Our hotel typically accept cash, credit cards, and debit cards. Some hotels may also accept travelers checks or money orders.</p>
-                        </div>
-                    </div>
-                    <div class="position-absolute Dotted-Shape">
-                        <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the amenities offered?</h5>
-                            <p class="card-text card-text-faqs mt-1">Amenities offered by hotels vary depending on the hotel. Some common amenities include free Wi-Fi, a fitness center, a swimming pool, and a business center.</p>
+        <?php
+        foreach ($cardfaq as $value) { ?>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <div class="card demo-about-us-card">
+                        <div class="img-ellise">
+                            <div class="card-body card-faqs">
+                                <h5 class="card-title"><?= $value['title'] ?></h5>
+                                <p class="card-text card-text-faqs mt-1"><?= $value['description'] ?></p>
+                            </div>
                         </div>
                         <div class="position-absolute Dotted-Shape">
                             <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
@@ -142,52 +142,9 @@ $this->title = 'About Us';
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the cancellation policies?</h5>
-                            <p class="card-text card-text-faqs mt-1">Cancellation policies vary depending on the hotel. You should always check the hotel's cancellation policy before making a reservation.</p>
-                        </div>
-                        <div class="position-absolute Dotted-Shape">
-                            <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the pet policies?</h5>
-                            <p class="card-text card-text-faqs mt-1">Pet policies vary depending on the hotel. Some hotels allow pets, while others do not. You should always check the hotel's pet policy before making a reservation.</p>
-                        </div>
-                        <div class="position-absolute Dotted-Shape">
-                            <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="position-relative">
-                <div class="card demo-about-us-card ">
-                    <div class="img-ellise">
-                        <div class="card-body card-faqs">
-                            <h5 class="card-title">What are the accessibility options?</h5>
-                            <p class="card-text card-text-faqs mt-1">Accessibility options vary depending on the hotel. Some hotels have rooms that are accessible to guests with disabilities. You should always check the hotel's accessibility options before making a reservation.</p>
-                        </div>
-                        <div class="position-absolute Dotted-Shape">
-                            <img src="<?= Yii::getAlias('@web/img/Dotted-Shape-1.png') ?>" alt="Dotted Shape" width="25px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        }
+        ?>
     </div>
 </div>
 <?php

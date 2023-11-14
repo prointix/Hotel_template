@@ -66,6 +66,17 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+h2,
+.h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 78px;
+}
+p,
+.p .demo-text-about-us {
+  font-size: 15px;
+  font-weight: 400;
+}
 
 p {
   margin-top: 0;
@@ -690,7 +701,7 @@ p {
   background-color: var(--bg-info);
 }
 .demo-text-about-us {
-  font-size: 15px;
+  line-height: 32px;
   color: var(--text-paragrap);
 }
 .about-partner {
@@ -1385,6 +1396,9 @@ hr.line-booking-detail {
 }
 .text-latter-spacing-one {
   letter-spacing: 1px;
+}
+.bg-payment {
+  background: rgba(198, 233, 255, 0.58);
 }
 .btn-circle-payment {
   width: 30px;

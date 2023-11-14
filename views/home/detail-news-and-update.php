@@ -1,5 +1,14 @@
 <?php
 $this->title = 'News and Update';
+
+
+$PopularArticles = [
+    ['title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',],
+    ['title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',],
+    ['title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',],
+    ['title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',],
+]
+
 ?>
 <section class="section-detail-news-and-update">
     <div class="container mb-5">
@@ -50,46 +59,21 @@ $this->title = 'News and Update';
             </div>
             <div class="col-lg-4">
                 <h4 class="mb-4 mt-sm-5">Popular Articles</h4>
-                <div class="d-flex mb-3">
-                    <div class="flex-shrink-0">
-                        <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded sub-img-detail" alt="Detail News">
+                <?php foreach ($PopularArticles as $value) {
+                ?>
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded sub-img-detail" alt="Detail News">
+                        </div>
+                        <div class="pl-3">
+                            <span class="btn-news-sub-detail">Dec 22, 2023</span>
+                            <h6 class="ml-0 sub-text-detail mt-2 mb-3 text-uppercase"><?= $value['title'] ?></h6>
+                            <small class="fst-italic text-more-detail">Read more</small>
+                        </div>
                     </div>
-                    <div class="pl-3">
-                        <span class="btn-news-sub-detail">Dec 22, 2023</span>
-                        <h6 class="ml-0 sub-text-detail mt-2 mb-3">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
-                        <small class="fst-italic text-more-detail">Read more</small>
-                    </div>
-                </div>
-                <div class="d-flex mb-3">
-                    <div class="flex-shrink-0">
-                        <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded sub-img-detail" alt="Detail News">
-                    </div>
-                    <div class="pl-3">
-                        <span class="btn-news-sub-detail">Dec 22, 2023</span>
-                        <h6 class="ml-0 sub-text-detail mt-2 mb-3">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
-                        <small class="fst-italic text-more-detail">Read more</small>
-                    </div>
-                </div>
-                <div class="d-flex mb-3">
-                    <div class="flex-shrink-0">
-                        <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded sub-img-detail" alt="Detail News">
-                    </div>
-                    <div class="pl-3">
-                        <span class="btn-news-sub-detail">Dec 22, 2023</span>
-                        <h6 class="ml-0 sub-text-detail mt-2 mb-3">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
-                        <small class="fst-italic text-more-detail">Read more</small>
-                    </div>
-                </div>
-                <div class="d-flex mb-3">
-                    <div class="flex-shrink-0">
-                        <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded sub-img-detail" alt="Detail News">
-                    </div>
-                    <div class="pl-3 ">
-                        <span class="btn-news-sub-detail">Dec 22, 2023</span>
-                        <h6 class="ml-0 sub-text-detail mt-2 mb-3">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h6>
-                        <small class="fst-italic text-more-detail">Read more</small>
-                    </div>
-                </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </div>

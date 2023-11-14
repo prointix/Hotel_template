@@ -3,6 +3,29 @@
 use yii\helpers\Url;
 
 $this->title = 'News And Update';
+
+$CardNewsandUpdate = [
+    [
+        'image' => Yii::getAlias('@web/img/News-SR-1.png'),
+        'title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',
+        'descrption' => 'From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...',
+    ],
+    [
+        'image' => Yii::getAlias('@web/img/News-SR-2.png'),
+        'title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',
+        'descrption' => 'From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...',
+    ],
+    [
+        'image' => Yii::getAlias('@web/img/News-SR-3.png'),
+        'title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',
+        'descrption' => 'From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...',
+    ],
+    [
+        'image' => Yii::getAlias('@web/img/News-SR-4.png'),
+        'title' => 'TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP',
+        'descrption' => 'From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...',
+    ],
+]
 ?>
 <section class="section-news-and-update">
     <div class="container">
@@ -22,74 +45,28 @@ $this->title = 'News And Update';
         </div>
         <div class="line-news"></div>
         <div class="row gy-4 gx-3 mt-4">
-            <div class="col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
+            <?php foreach ($CardNewsandUpdate as $value) {
+            ?>
+                <div class="col-lg-6">
+                    <div class="card mb-3 news-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-5 col-md-5">
+                                <img src="<?= $value['image'] ?>" class="img-fluid rounded img-card-sr" alt="SR News">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <div class="card-body mx-2">
+                                    <span class="btn-news-sr">Dec 22, 2023</span>
+                                    <h5 class="card-title mt-3 text-news-sr-title text-uppercase"><?= $value['title'] ?></h5>
+                                    <p class="card-text text-news-sr-para"><?= $value['descrption'] ?></p>
+                                    <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-2.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-3.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-4.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>
@@ -101,74 +78,28 @@ $this->title = 'News And Update';
         </div>
         <div class="line-news"></div>
         <div class="row gy-4 gx-3 mt-4">
-            <div class="col-12 col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-1.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
+            <?php foreach ($CardNewsandUpdate as $value) {
+            ?>
+                <div class="col-lg-6">
+                    <div class="card mb-3 news-card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-5 col-md-5">
+                                <img src="<?= $value['image'] ?>" class="img-fluid rounded img-card-sr" alt="SR News">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <div class="card-body mx-2">
+                                    <span class="btn-news-sr">Dec 22, 2023</span>
+                                    <h5 class="card-title mt-3 text-news-sr-title text-uppercase"><?= $value['title'] ?></h5>
+                                    <p class="card-text text-news-sr-para"><?= $value['descrption'] ?></p>
+                                    <a href="<?= Url::to(['/home/detail-news-and-update']) ?>" class="btn btn-news-more-sr">Read more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-2.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="#" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-3.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="#" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="card mb-3 news-card" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-5 col-md-5">
-                            <img src="<?= Yii::getAlias('@web/img/News-SR-4.png') ?>" class="img-fluid rounded img-card-sr" alt="SR News">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <div class="card-body mx-2">
-                                <span class="btn-news-sr">Dec 22, 2023</span>
-                                <h5 class="card-title mt-3 text-news-sr-title">TOP 10 STUNNING HOTELS NEAR PUB STREET IN SIEM REAP</h5>
-                                <p class="card-text text-news-sr-para">From private underground car parks and free on-site spaces from private underground car parks and free on-site spaces t ...</p>
-                                <a href="#" class="btn btn-news-more-sr">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>

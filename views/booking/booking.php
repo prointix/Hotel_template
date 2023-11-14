@@ -221,10 +221,10 @@ $this->title = 'Bookinng';
             </div>
             <div class="card mb-4">
                 <div class="card-body px-4 py-4">
-                    <h4 class=" text-latter-spacing-one mb-3">Choose payment option</h4>
+                    <h4 class="text-latter-spacing-one mb-3">Choose payment option</h4>
                     <form class="pb-0">
                         <div class="d-flex flex-row pb-3">
-                            <div class="rounded border d-flex w-100 p-2 align-items-center">
+                            <div class="rounded border d-flex w-100 p-2 align-items-center bg-payment">
                                 <p class="mb-0">
                                     <button type="button" class="btn btn-outline-dark btn-circle-payment mx-1 me-3"><i class="fas fa-donate"></i></button>Deposit
                                 </p>
@@ -256,3 +256,9 @@ $this->title = 'Bookinng';
         </div>
     </div>
 </div>
+<?php
+$script = <<<JS
+
+JS;
+$this->registerJs($script);
+?>
